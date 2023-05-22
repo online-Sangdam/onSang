@@ -3,5 +3,16 @@
 }
 
 .SideNav{
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftElement{
+  display: flex;
+  padding-left: 30px;
+}
+
+.Title{
+  padding-left: 30px;
 }

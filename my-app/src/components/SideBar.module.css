@@ -21,6 +21,11 @@
   height: 40px;
   transition: 0.8s ease;
 }
+.exitButton {
+font-size: 30px;
+    float: right;
+    margin: 20px 30px;
+}
 .content {
   text-align: center;
   display: flex;

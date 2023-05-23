@@ -6,7 +6,7 @@ function Select() {
 
   return (
     <div className={styles.parent}>
-      Select
+      
     </div>
   )
 }

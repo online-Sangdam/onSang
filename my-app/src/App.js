@@ -11,10 +11,10 @@ function App() {
       <ScrollTop />
       <NavBar />
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/Select">
+        <Route path="/select">
           <Select />
         </Route>
       </Switch>

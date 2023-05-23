@@ -2,20 +2,19 @@
   background-color: #E3ECF1;
 }
 .sidebar {
-  background-color: #E3ECF1;
+  background-color: black;
   border-right: 4px solid #202020;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   transition: 0.4s ease;
-  color: #202020;
+  color: #ffffff;
   height: 100%;
   z-index: 99;
 }
 .button {
   position: relative;
-  top: 10px;
   width: 40px;
   height: 40px;
   transition: 0.8s ease;

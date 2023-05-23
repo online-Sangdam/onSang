@@ -5,18 +5,18 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = ({ width = 280, children }) => {
 
-  const activeStyle ={
-    background:'black',
-    color:'white',
+  const activeStyle = {
+    background: 'black',
+    color: 'white',
   };
-  
+
   const [isOpen, setOpen] = useState(false);
   const [xPosition, setX] = useState(width);
   const side = useRef();
 
   const [menus, setMenus] = useState([
-    { name: "메뉴 1", path: "/"},
-    { name: "메뉴 2", path: "/"},
+    { name: "Select", path: "/Select" },
+    { name: "MENU 2", path: "/" },
   ]);
 
   // button 클릭 시 토글
@@ -42,16 +42,16 @@ const Sidebar = ({ width = 280, children }) => {
           <div className={styles.exitButton} onClick={() => toggleMenu()}>X</div>
           <div className={styles.content}>
             {menus.map((menu) => {
-              return(
-              <NavLink exact
-              style={{color: "gray", textDecoration: "none", paddingTop:"40px"}}
-              to={`${menu.path}`}
-              activeStyle={{color: "black"}}>{menu.name}</NavLink>
+              return (
+                <NavLink exact
+                  style={{ color: "white", textDecoration: "none", paddingTop: "40px" }}
+                  to={`${menu.path}`}
+                  activeStyle={{ color: "white" }}>{menu.name}</NavLink>
               )
             })}
-            
+
           </div>
-          
+
         </div>
       </div>
     </div>

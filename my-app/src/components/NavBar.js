@@ -1,19 +1,26 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import Sidebar from "./SideBar";
 
 function NavBar() {
+
+  const activeStyle = {
+    textDecoration: "none",
+    color: "white",
+    fontSize: "20px",
+    fontWeight: "bold",
+  }
   return (
     <div className={styles.NavBody}>
       <div className={styles.SideNav}>
         <div className={styles.leftElement}>
           <Sidebar width={320} />
           <div className={styles.Title}>
-            <Link to={"/"}>온상</Link>
+            <NavLink to={"/"} activeStyle={activeStyle}>온상</NavLink>
           </div>
         </div>
-        <div className={styles.d}>
-          <Link data-cy="login-button" className={styles.d} to="/auth/login?next=/">로그인/가입</Link>
+        <div className={styles.Login}>
+          <NavLink to={"/"} activeStyle={activeStyle}>로그인</NavLink>
         </div>
       </div>
     </div>

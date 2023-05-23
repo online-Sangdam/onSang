@@ -1,0 +1,12 @@
+.parent{
+  position: relative;
+}
+
+.Banner{
+  margin: 50px 200px 30px 200px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  height: 300px;
+  font-size: 40px;
+}

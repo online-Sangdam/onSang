@@ -1,11 +1,13 @@
 .NavBody{
   background-color:gray;
+  height: 60px;
 }
 
 .SideNav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 .leftElement{
@@ -15,4 +17,10 @@
 
 .Title{
   padding-left: 30px;
+  padding-top: 4px;
+}
+
+.Login{
+  padding-right: 50px;
+  padding-top: 4px;
 }

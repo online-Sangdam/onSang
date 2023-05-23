@@ -43,7 +43,9 @@ const Sidebar = ({ width = 280, children }) => {
           <div className={styles.content}>
             {menus.map((menu) => {
               return (
-                <NavLink exact
+                <NavLink 
+                  onClick={() => toggleMenu()}
+                  exact
                   style={{ color: "white", textDecoration: "none", paddingTop: "40px" }}
                   to={`${menu.path}`}
                   activeStyle={{ color: "white" }}>{menu.name}</NavLink>

@@ -1,10 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import Sidebar from "./SideBar";
 
 function NavBar() {
 
-  const activeStyle = {
+  const Style = {
     textDecoration: "none",
     color: "white",
     fontSize: "20px",
@@ -16,11 +16,11 @@ function NavBar() {
         <div className={styles.leftElement}>
           <Sidebar width={320} />
           <div className={styles.Title}>
-            <NavLink to={"/"} activeStyle={activeStyle}>온상</NavLink>
+            <Link to={"/onSang"} style={Style}>온상</Link>
           </div>
         </div>
         <div className={styles.Login}>
-          <NavLink to={"/"} activeStyle={activeStyle}>로그인</NavLink>
+          <Link to={"/onSang/Login"} style={Style}>로그인</Link>
         </div>
       </div>
     </div>

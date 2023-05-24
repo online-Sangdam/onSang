@@ -4,6 +4,7 @@ import ScrollTop from "./components/ScrollToTop";
 import Home from "./router/Home";
 import Select from "./router/Select";
 import NavBar from "./components/NavBar";
+import Login from "./router/Login";
 
 function App() {
   return (
@@ -11,11 +12,14 @@ function App() {
       <ScrollTop />
       <NavBar />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/onSang/">
           <Home />
         </Route>
-        <Route path="/select">
+        <Route path="/onSang/select">
           <Select />
+        </Route>
+        <Route path="/onSang/Login">
+          <Login />
         </Route>
       </Switch>
     </Router>

@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import styles from "./Counselor.module.css";
 
 function Counselor({name, img, profile, id}) {
@@ -6,10 +6,10 @@ function Counselor({name, img, profile, id}) {
     <div className={styles.body}>
       <div className={styles.top}>
         <div className={styles.left}>
-          <img src={img}/>
+          <img src={img} alt="person"/>
           <div className={styles.name}>{name}</div>
         </div>
-        <NavLink className={styles.right} to={`/counselor/${id}`}>카톡</NavLink>
+        <Link className={styles.right} to={`/onSang/counselor/${id}`}>카톡</Link>
       </div>
       <div className={styles.profile}>
         {profile}

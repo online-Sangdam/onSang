@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 // 기본 react 파일
 
 import styles from "./Select.module.css"

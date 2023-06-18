@@ -39,7 +39,6 @@ const Sidebar = ({ width = 280, children }) => { // NavBar에서 SideBar로 prop
                 <Link 
                   key={menu.id}
                   onClick={() => toggleMenu()}
-                  exact
                   style={{ color: "white", textDecoration: "none", paddingTop: "40px" }}
                   to={`/onSang${menu.path}`}
                   >{menu.name}</Link>

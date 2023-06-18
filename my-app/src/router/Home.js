@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 // react 기본 파일
 
 import styles from "./Home.module.css"

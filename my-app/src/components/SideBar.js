@@ -1,9 +1,13 @@
 import React, { useRef, useState } from "react";
-import styles from "./SideBar.module.css";
-import sideBtn from "../img/SideBtn.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 
-const Sidebar = ({ width = 280, children }) => {
+import styles from "./SideBar.module.css";
+
+import sideBtn from "../img/SideBtn.png"; // 버튼 이미지
+
+
+
+const Sidebar = ({ width = 280, children }) => { // NavBar에서 SideBar로 props 받기
 
   const [xPosition, setX] = useState(width);
   const side = useRef();
@@ -22,7 +26,7 @@ const Sidebar = ({ width = 280, children }) => {
     }
   };
 
-  return (
+  return ( // 이쪽은 크게 몰라도 됨
     <div>
       <img src={sideBtn} alt="contact open button" className={styles.button} onClick={() => toggleMenu()} />
       <div className={styles.container}>

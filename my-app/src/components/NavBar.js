@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
-import Sidebar from "./SideBar";
 
-function NavBar() {
+import Sidebar from "./SideBar"; // 왼쪽 메뉴바 components
+// 상단 메뉴바에 왼쪽 사이드 메뉴바 버튼 있어서 여기로 import 함
+
+function NavBar() { // 상단 메뉴바
 
   const Style = {
     textDecoration: "none",
@@ -14,13 +16,13 @@ function NavBar() {
     <div className={styles.NavBody}>
       <div className={styles.SideNav}>
         <div className={styles.leftElement}>
-          <Sidebar width={320} />
+          <Sidebar width={320} /> {/*왼쪽 메뉴바*/}
           <div className={styles.Title}>
-            <Link to={"/onSang"} style={Style}>온상</Link>
+            <Link to={"/onSang"} style={Style}>온상</Link> {/*메인 페이지 이동*/}
           </div>
         </div>
         <div className={styles.Login}>
-          <Link to={"/onSang/Login"} style={Style}>로그인</Link>
+          <Link to={"/onSang/Login"} style={Style}>로그인</Link> {/*로그인 페이지 이동*/}
         </div>
       </div>
     </div>

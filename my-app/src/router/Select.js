@@ -19,12 +19,6 @@ function Select() {
     <div className={styles.parent}>
       
       {CounselorData.counselors.map(counselors =>(
-          // <tr>
-          //   <td>{counselors.id}</td>
-          //   <td>{counselors.이름}</td>
-          //   <td>{counselors.나이}</td>
-          //   <td>{counselors.전문분야}</td>
-          // </tr>
           <Counselor key={counselors.id}
           name = {counselors.이름} 
           img = {img}

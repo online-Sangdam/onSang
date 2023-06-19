@@ -10,6 +10,7 @@ import Counselor from "../components/Counselor"; //Counselor components 파일
 import img from "../img/person.png" // 더미 사진 데이터
 import { couldStartTrivia } from "typescript";
 
+//test용 주석을 달겠습니다.
 function Select() {
 
   console.log(CounselorData);

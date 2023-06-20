@@ -1,39 +1,32 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom"; 
+
 import styles from "./SideBar.module.css";
-import sideBtn from "../img/SideBtn.png";
-import { NavLink } from "react-router-dom";
 
-const Sidebar = ({ width = 280, children }) => {
+import sideBtn from "../img/SideBtn.png"; // 버튼 이미지
 
-  const activeStyle ={
-    background:'black',
-    color:'white',
-  };
-  
-  const [isOpen, setOpen] = useState(false);
+
+
+const Sidebar = ({ width = 280, children }) => { // NavBar에서 SideBar로 props 받기
+
   const [xPosition, setX] = useState(width);
   const side = useRef();
 
-  const [menus, setMenus] = useState([
-    { name: "메뉴 1", path: "/"},
-    { name: "메뉴 2", path: "/"},
-  ]);
+  const menus = [
+    { id: "1", name: "Select", path: "/Select" },
+    { id: "2", name: "MENU 2", path: "/" },
+  ];
 
   // button 클릭 시 토글
   const toggleMenu = () => {
     if (xPosition > 0) {
       setX(0);
-      setOpen(true);
     } else {
       setX(width);
-      setOpen(false);
     }
   };
 
-  menus.map((menu, index) => {
-    console.log(menu);
-  })
-  return (
+  return ( // 이쪽은 크게 몰라도 됨
     <div>
       <img src={sideBtn} alt="contact open button" className={styles.button} onClick={() => toggleMenu()} />
       <div className={styles.container}>
@@ -42,16 +35,18 @@ const Sidebar = ({ width = 280, children }) => {
           <div className={styles.exitButton} onClick={() => toggleMenu()}>X</div>
           <div className={styles.content}>
             {menus.map((menu) => {
-              return(
-              <NavLink exact
-              style={{color: "gray", textDecoration: "none", paddingTop:"40px"}}
-              to={`${menu.path}`}
-              activeStyle={{color: "black"}}>{menu.name}</NavLink>
+              return (
+                <Link 
+                  key={menu.id}
+                  onClick={() => toggleMenu()}
+                  style={{ color: "white", textDecoration: "none", paddingTop: "40px" }}
+                  to={`/onSang${menu.path}`}
+                  >{menu.name}</Link>
               )
             })}
-            
+
           </div>
-          
+
         </div>
       </div>
     </div>

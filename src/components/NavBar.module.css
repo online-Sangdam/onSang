@@ -1,7 +1,26 @@
 .NavBody{
-  background-color:gray;
+  background-color:#1c1c1c;
+  height: 60px;
 }
 
 .SideNav{
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.leftElement{
+  display: flex;
+  padding-left: 30px;
+}
+
+.Title{
+  padding-left: 30px;
+  padding-top: 4px;
+}
+
+.Login{
+  padding-right: 50px;
+  padding-top: 4px;
 }

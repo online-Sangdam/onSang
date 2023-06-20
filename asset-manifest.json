@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/onSang/static/css/main.946a5159.css",
-    "main.js": "/onSang/static/js/main.0bf8a355.js",
+    "main.css": "/onSang/static/css/main.b05c5504.css",
+    "main.js": "/onSang/static/js/main.6d19c0fb.js",
     "static/media/person.png": "/onSang/static/media/person.2f85c931bc9c98826ac2.png",
     "static/media/SideBtn.png": "/onSang/static/media/SideBtn.a0112268c30589ffb806.png",
     "index.html": "/onSang/index.html",
-    "main.946a5159.css.map": "/onSang/static/css/main.946a5159.css.map",
-    "main.0bf8a355.js.map": "/onSang/static/js/main.0bf8a355.js.map"
+    "main.b05c5504.css.map": "/onSang/static/css/main.b05c5504.css.map",
+    "main.6d19c0fb.js.map": "/onSang/static/js/main.6d19c0fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.946a5159.css",
-    "static/js/main.0bf8a355.js"
+    "static/css/main.b05c5504.css",
+    "static/js/main.6d19c0fb.js"
   ]
 }

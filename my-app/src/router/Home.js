@@ -8,9 +8,10 @@ function Home() {
   return (
     <div className={styles.parent}>
       <div className={styles.Banner}>
-        <div style={{paddingTop: "70px"}}>
-          <div>온상</div>
-          <div style={{fontSize: "20px", paddingTop: "30px"}}>여러분의 온라인 상담을 해드립니다.</div>
+        <div style={{ paddingTop: "145px" }}>
+          <div style={{ fontSize: "50px", fontWeight: "bold" }}>온상</div>
+          <img></img>
+          <div style={{ fontSize: "20px", paddingTop: "30px" }}>여러분의 온라인 상담을 해드립니다.</div>
         </div>
       </div>
     </div>

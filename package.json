@@ -11,13 +11,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
   "dependencies": {},
-=======
   "dependencies": {
     "create-react-app": "^5.0.1"
   },
->>>>>>> main
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",

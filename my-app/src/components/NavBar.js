@@ -10,14 +10,14 @@ function NavBar() { // 상단 메뉴바
 
   const [inLogin, setinLogin] = useState(true);
   const location = useLocation();
-  let url;
+  const [url, setUrl] = useState(location.pathname);
   useEffect(() => {
     console.log(location);
-    url = location.pathname;
+    setUrl(location.pathname);
     if (url === "/onSang/Login")
       setinLogin(true);
     else setinLogin(false);
-  }, [location])
+  }, [url, location])
 
 
   const Style = {

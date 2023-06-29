@@ -36,13 +36,6 @@ function Login() {
   const [user, setUser] = useState(null);
   const [isLogin, setIsLogin] = useState(false);
   const { Kakao } = window;
-  const initKakao = async () => {
-    const jsKey = "4a0465204124cb18162eedbb5ffd63a3";
-    if (Kakao && !Kakao.isInitialized()) {
-      await Kakao.init(jsKey);
-      console.log(`kakao 초기화 ${Kakao.isInitialized()}`);
-    }
-  };
 
   const kakaoLogin = async () => {
     await Kakao.Auth.login({
@@ -76,13 +69,20 @@ function Login() {
   };
 
   useEffect(() => {
+    const initKakao = async () => {
+    const jsKey = "4a0465204124cb18162eedbb5ffd63a3";
+    if (Kakao && !Kakao.isInitialized()) {
+      await Kakao.init(jsKey);
+      console.log(`kakao 초기화 ${Kakao.isInitialized()}`);
+      }
+    };
     initKakao();
-  }, []);
+  }, [Kakao]);
   return (
     <div className={styles.parent}>
       <div className={styles.Banner}>
         <div style={{ paddingTop: "90px" }}>
-          <a style={{ cursor: "pointer" }} onClick={kakaoLogin}><img src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" /></a>
+          <a href="#!" style={{ cursor: "pointer" }} onClick={kakaoLogin}><img alt="카카오 로그인" src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" /></a>
         </div>
       </div>
     </div>

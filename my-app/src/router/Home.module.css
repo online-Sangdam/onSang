@@ -1,8 +1,8 @@
-.parent{
+.parent {
   position: relative;
 }
 
-.Banner{
+.Banner {
   background-image: url("../img/mainBg.jpeg");
   text-align: center;
   background-color: #1c1c1c;
@@ -10,4 +10,61 @@
   color: white;
   height: 400px;
   font-size: 40px;
+}
+
+.Block {
+  padding-top: 145px;
+}
+
+.Title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.Description {
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+/* 반응형 웹 CSS 추가 */
+@media (max-width: 768px) {
+  /* 화면 크기가 768px 이하일 때 적용되는 스타일 */
+  .Banner {
+    height: 300px;
+    font-size: 30px;
+  }
+
+  .Block {
+    padding-top: 100px;
+  }
+
+  .Title {
+    font-size: 40px;
+  }
+
+  .Description {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* 화면 크기가 576px 이하일 때 적용되는 스타일 */
+  .Banner {
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .Block {
+    padding-top: 80px;
+  }
+
+  .Title {
+    font-size: 30px;
+  }
+
+  .Description {
+    font-size: 16px;
+    padding-top: 10px;
+  }
 }

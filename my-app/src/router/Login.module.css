@@ -1,12 +1,31 @@
-.parent{
+.parent {
   position: relative;
 }
 
-.Banner{
-  margin: 50px 200px 30px 200px;
+.Banner {
+  margin: 50px 20px; /* 수정된 부분: 반응형으로 간격 조정 */
   text-align: center;
   background-color: #1c1c1c;
   color: white;
   height: 300px;
   font-size: 40px;
+}
+
+/* 반응형 웹 CSS 추가 */
+@media (max-width: 768px) {
+  /* 화면 크기가 768px 이하일 때 적용되는 스타일 */
+  .Banner {
+    margin: 50px 10px; /* 반응형으로 간격 조정 */
+    height: 200px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* 화면 크기가 576px 이하일 때 적용되는 스타일 */
+  .Banner {
+    margin: 50px 5px; /* 반응형으로 간격 조정 */
+    height: 150px;
+    font-size: 20px;
+  }
 }

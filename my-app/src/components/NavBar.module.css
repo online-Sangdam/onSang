@@ -1,26 +1,40 @@
-.NavBody{
-  background-color:#1c1c1c;
+.NavBody {
+  background-color: #1c1c1c;
   height: 60px;
 }
 
-.SideNav{
+.SideNav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 10px;
 }
 
-.leftElement{
+.leftElement {
   display: flex;
   padding-left: 30px;
 }
 
-.Title{
+.Title {
   padding-left: 30px;
   padding-top: 4px;
+  font-size: 24px; /* 반응형으로 폰트 크기 조정 */
 }
 
-.Login{
-  padding-right: 50px;
+.Login {
+  padding-right: 20px; /* 반응형으로 간격 조정 */
   padding-top: 4px;
+  font-size: 18px; /* 반응형으로 폰트 크기 조정 */
+}
+
+/* 반응형 웹 CSS 추가 */
+@media (max-width: 768px) {
+  /* 화면 크기가 768px 이하일 때 적용되는 스타일 */
+  .Title {
+    font-size: 20px; /* 폰트 크기 조정 */
+  }
+
+  .Login {
+    font-size: 16px; /* 폰트 크기 조정 */
+  }
 }

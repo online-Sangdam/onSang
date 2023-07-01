@@ -1,5 +1,5 @@
 .NavBody {
-  background-color: #1c1c1c;
+  background-color: #5c9d5c; /* 연두색 계열 배경색 */
   height: 60px;
 }
 
@@ -19,12 +19,14 @@
   padding-left: 30px;
   padding-top: 4px;
   font-size: 24px; /* 반응형으로 폰트 크기 조정 */
+  color: #006400; /* 초록색 글자색 */
 }
 
 .Login {
   padding-right: 20px; /* 반응형으로 간격 조정 */
   padding-top: 4px;
   font-size: 18px; /* 반응형으로 폰트 크기 조정 */
+  color: #006400; /* 초록색 글자색 */
 }
 
 /* 반응형 웹 CSS 추가 */

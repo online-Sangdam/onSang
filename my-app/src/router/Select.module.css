@@ -1,0 +1,12 @@
+.parent {
+  display: grid;
+  grid-template-columns: 1fr; /* By default, display one component per row */
+  gap: 20px;
+}
+
+/* Media query for screens with width greater than or equal to 768px (PCs) */
+@media (min-width: 768px) {
+  .parent {
+    grid-template-columns: repeat(2, 1fr); /* Display two components per row */
+  }
+}

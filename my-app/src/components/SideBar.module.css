@@ -1,16 +1,17 @@
+/* SideBar.module.css */
 .container {
   background-color: #E3ECF1;
 }
 
 .sidebar {
-  background-color: black;
-  border-right: 4px solid #202020;
+  background-color: white;
+  border-right: 1px solid #202020;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   transition: 0.4s ease;
-  color: #ffffff;
+  color: black;
   height: 100%;
   z-index: 99;
   width: 280px; /* 초기 너비 설정 */

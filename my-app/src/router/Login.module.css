@@ -5,10 +5,14 @@
 .Banner {
   margin: 50px 20px; /* 수정된 부분: 반응형으로 간격 조정 */
   text-align: center;
-  background-color: #1c1c1c;
-  color: white;
+  background-color: #CCFFCC; /* 연두색 계열 배경색 */
+  color: #FFFFFF; /* 흰색 글자색 */
   height: 300px;
   font-size: 40px;
+}
+
+.img{
+  max-height: 150px;
 }
 
 /* 반응형 웹 CSS 추가 */
@@ -19,6 +23,10 @@
     height: 200px;
     font-size: 30px;
   }
+
+  .img{
+    max-height: 100px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -28,4 +36,8 @@
     height: 150px;
     font-size: 20px;
   }
+
+  .img{
+  max-height: 70px;
+}
 }

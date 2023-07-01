@@ -27,7 +27,7 @@ const Sidebar = ({ width = 280, children }) => {
       setX(width);
     } else {
       // If the screen size is less than or equal to 768px, set the Sidebar width to a smaller value
-      setX(180); // You can adjust the value as per your requirement
+      setX(width); // You can adjust the value as per your requirement
     }
   };
 
@@ -66,7 +66,7 @@ const Sidebar = ({ width = 280, children }) => {
                   key={menu.id}
                   onClick={() => toggleMenu()}
                   style={{
-                    color: "white",
+                    color: "black",
                     textDecoration: "none",
                     paddingTop: "40px",
                   }}

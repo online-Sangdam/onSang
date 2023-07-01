@@ -9,9 +9,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
-    "react-scripts": "5.0.1",
-    "typescript": "^5.1.6",
-    "perf_hooks": "^14.0.0",
+    "react-scripts": "^5.3.0",
+    "typescript": "^4.5.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -22,7 +21,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
-  "homepage": "http://online-Sangdam.github.io/onSang",
+  "homepage": "https://online-Sangdam.github.io/onSang",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -42,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^5.5.0"
   }
 }

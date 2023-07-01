@@ -70,10 +70,10 @@ function Login() {
 
   useEffect(() => {
     const initKakao = async () => {
-    const jsKey = "4a0465204124cb18162eedbb5ffd63a3";
-    if (Kakao && !Kakao.isInitialized()) {
-      await Kakao.init(jsKey);
-      console.log(`kakao 초기화 ${Kakao.isInitialized()}`);
+      const jsKey = "4a0465204124cb18162eedbb5ffd63a3";
+      if (Kakao && !Kakao.isInitialized()) {
+        await Kakao.init(jsKey);
+        console.log(`kakao 초기화 ${Kakao.isInitialized()}`);
       }
     };
     initKakao();
@@ -81,8 +81,8 @@ function Login() {
   return (
     <div className={styles.parent}>
       <div className={styles.Banner}>
-        <div style={{ paddingTop: "90px" }}>
-          <a href="#!" style={{ cursor: "pointer" }} onClick={kakaoLogin}><img alt="카카오 로그인" src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" /></a>
+        <div style={{ paddingTop: "50px" }}>
+          <a href="#!" style={{ cursor: "pointer" }} onClick={kakaoLogin}><img className={styles.img} alt="카카오 로그인" src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" /></a>
         </div>
       </div>
     </div>

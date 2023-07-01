@@ -12,19 +12,19 @@
 
 .leftElement {
   display: flex;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .Title {
-  padding-left: 30px;
-  padding-top: 4px;
+  padding-left: 20px;
+  padding-top: 5px;
   font-size: 24px; /* 반응형으로 폰트 크기 조정 */
   color: #006400; /* 초록색 글자색 */
 }
 
 .Login {
   padding-right: 20px; /* 반응형으로 간격 조정 */
-  padding-top: 4px;
+  padding-top: 5px;
   font-size: 18px; /* 반응형으로 폰트 크기 조정 */
   color: #006400; /* 초록색 글자색 */
 }

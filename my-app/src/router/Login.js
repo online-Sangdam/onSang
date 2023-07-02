@@ -70,7 +70,7 @@ function Login() {
 
   useEffect(() => {
     const initKakao = async () => {
-      const jsKey = "4a0465204124cb18162eedbb5ffd63a3";
+      const jsKey = "f1cb92faf3857e66f7d43161b85e7b5d";
       if (Kakao && !Kakao.isInitialized()) {
         await Kakao.init(jsKey);
         console.log(`kakao 초기화 ${Kakao.isInitialized()}`);

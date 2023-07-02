@@ -62,18 +62,23 @@ const Sidebar = ({ width = 280, children }) => {
           <div className={styles.content}>
             {menus.map((menu) => {
               return (
-                <Link
-                  key={menu.id}
-                  onClick={() => toggleMenu()}
+                <div
                   style={{
-                    color: "black",
-                    textDecoration: "none",
-                    paddingTop: "40px",
+                      paddingTop: "40px",
                   }}
-                  to={`/onSang${menu.path}`}
-                >
-                  {menu.name}
-                </Link>
+                  >
+                  <Link
+                    key={menu.id}
+                    onClick={() => toggleMenu()}
+                    style={{
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                    to={`/onSang${menu.path}`}
+                  >
+                    {menu.name}
+                  </Link>
+                </div>
               );
             })}
           </div>

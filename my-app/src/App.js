@@ -16,8 +16,8 @@ function App() {
 
   return (
     <Router>
-      <ScrollTop /> {/*페이지 이동시 스크롤 맨 위로 올라오게 하는 components*/}
       <NavBar /> {/* 상단 메뉴바 components*/}
+      <ScrollTop /> {/*페이지 이동시 스크롤 맨 위로 올라오게 하는 components*/}
       <Switch>
         <Route exact path="/onSang/"> {/*메인 페이지*/}
           <Home />

@@ -1,30 +1,28 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import SignIn from "./SignIn";
 
-class button extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isModalOpen: false,
-    };
-  }
+function Button() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  openModal = () => {
-    this.setState({ isModalOpen: true });
+  const openModal = () => {
+    setIsModalOpen(true);
   };
 
-  closeModal = () => {
-    this.setState({ isModalOpen: false });
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
-  render() {
-    return (
-      <>
-        <a style={{textDecoration: "none", color: "white", fontSize: "20px" ,fontWeight:"bold", cursor: "pointer"}}onClick={this.openModal}>로그인</a>
-        <SignIn isOpen={this.state.isModalOpen} close={this.closeModal} />
-      </>
-    );
-  }
+  return (
+    <>
+      <a
+        style={{ textDecoration: "none", color: "white", fontSize: "20px", fontWeight: "bold", cursor: "pointer" }}
+        onClick={openModal}
+      >
+        로그인
+      </a>
+      <SignIn isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+    </>
+  );
 }
 
-export default button;
+export default Button;

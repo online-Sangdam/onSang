@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/onSang/static/css/main.a3901e8d.css",
-    "main.js": "/onSang/static/js/main.4957b7bf.js",
+    "main.css": "/onSang/static/css/main.d887d522.css",
+    "main.js": "/onSang/static/js/main.cc528536.js",
     "static/media/person.png": "/onSang/static/media/person.5a7b96fee4f5521f628f.png",
     "static/media/mainBg.jpeg": "/onSang/static/media/mainBg.9fb5172881cb52a81cb9.jpeg",
+    "static/media/kakao.png": "/onSang/static/media/kakao.263468f4ad9c82393cfa.png",
     "static/media/SideBtn.png": "/onSang/static/media/SideBtn.a0112268c30589ffb806.png",
     "index.html": "/onSang/index.html",
-    "main.a3901e8d.css.map": "/onSang/static/css/main.a3901e8d.css.map",
-    "main.4957b7bf.js.map": "/onSang/static/js/main.4957b7bf.js.map"
+    "main.d887d522.css.map": "/onSang/static/css/main.d887d522.css.map",
+    "main.cc528536.js.map": "/onSang/static/js/main.cc528536.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3901e8d.css",
-    "static/js/main.4957b7bf.js"
+    "static/css/main.d887d522.css",
+    "static/js/main.cc528536.js"
   ]
 }

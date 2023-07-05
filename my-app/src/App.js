@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"; // react 기본 파일
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 
 import "./styles.css";
 
@@ -16,8 +16,11 @@ import Login from "./router/Login";
 
 function App() {
   useEffect(() => {
-    // Initialize KakaoTalk SDK with your API key
-    Kakao.init("4a0465204124cb18162eedbb5ffd63a3");
+    // Check if Kakao is defined
+    if (window.Kakao) {
+      // Initialize KakaoTalk SDK with your API key
+      window.Kakao.init("4a0465204124cb18162eedbb5ffd63a3");
+    }
   }, []);
   return (
     <Router>

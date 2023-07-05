@@ -1,13 +1,10 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import styles from "./SignIn.module.css";
+import KakaoLogin from "react-kakao-login";
+import kakao from "../img/kakao.png"
 
 function SignIn({ isOpen, setIsOpen }) {
-  const [state, setState] = useState({
-    email: "",
-    password: "",
-  });
-
+  /*
   function loginHandler(e) {
     const { name, value } = e.target;
     setState((prevState) => ({
@@ -30,20 +27,16 @@ function SignIn({ isOpen, setIsOpen }) {
     })
       .then((res) => res.json())
       .then((res) => console.log(res));
+  }*/
+
+  function handleKakaoSuccess(response) {
+    // Handle successful Kakao login
+    console.log("Kakao login successful:", response);
   }
 
-  function handleKakaoLogin() {
-    Kakao.Auth.login({
-      success: function(authObj) {
-        // Get KakaoTalk access token from authObj and use it for server-side authentication
-        const accessToken = authObj.access_token;
-        // Send the access token to your server and handle authentication there
-        // ...
-      },
-      fail: function(err) {
-        console.log("Kakao login failed:", err);
-      },
-    });
+  function handleKakaoFail(error) {
+    // Handle failed Kakao login
+    console.log("Kakao login failed:", error);
   }
 
   return (
@@ -57,27 +50,19 @@ function SignIn({ isOpen, setIsOpen }) {
               </span>
               <div className={styles.modalContents} onClick={(e) => e.stopPropagation()}>
                 {/* Rest of the JSX */}
-                <input
-                  name="email"
-                  className={styles.loginId}
-                  type="text"
-                  placeholder="아이디"
-                  value={state.email}
-                  onChange={loginHandler}
-                />
-                <input
-                  name="password"
-                  className={styles.loginPw}
-                  type="password"
-                  placeholder="비밀번호"
-                  value={state.password}
-                  onChange={loginHandler}
-                />
+                <div className={styles.title}>온상</div>
                 <div className={styles.socialBox}>
-                  <div className={styles.kakao} onClick={handleKakaoLogin}>
-                    <img className={styles.kakaoLogo} src="/Images/SignIn/kakao.png" alt="Kakao" />
-                    <div className={styles.kakaoText}>카카오 계정으로 로그인</div>
-                  </div>
+                  <KakaoLogin
+                    token="f1cb92faf3857e66f7d43161b85e7b5d"
+                    onSuccess={handleKakaoSuccess}
+                    onFail={handleKakaoFail}
+                    render={({ onClick }) => (
+                      <div className={styles.kakao} onClick={onClick}>
+                        <img className={styles.kakaoLogo} src={kakao} alt="Kakao" />
+                        <div className={styles.kakaoText}>카카오 계정으로 로그인</div>
+                      </div>
+                    )}
+                  />
                   {/* Other social login buttons (e.g., Facebook) can be added similarly */}
                 </div>
                 {/* Rest of the JSX */}

@@ -8,13 +8,9 @@ function Button() {
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <>
-      <a
+      <a href="#!"
         style={{ textDecoration: "none", color: "white", fontSize: "20px", fontWeight: "bold", cursor: "pointer" }}
         onClick={openModal}
       >

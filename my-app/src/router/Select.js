@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 // 기본 react 파일
 import CounselorData from '../db/data.json';
 
@@ -8,7 +7,6 @@ import styles from "./Select.module.css"
 import Counselor from "../components/Counselor"; //Counselor components 파일
 
 import img from "../img/person.png" // 더미 사진 데이터
-import { couldStartTrivia } from "typescript";
 
 //test용 주석을 달겠습니다.
 function Select() {

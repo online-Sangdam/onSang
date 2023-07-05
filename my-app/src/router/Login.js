@@ -33,7 +33,7 @@ import styles from "./Login.module.css"
 }*/
 
 function Login() {
-  const [user, setUser] = useState(null);
+  //const [user, setUser] = useState(null);
   const [isLogin, setIsLogin] = useState(false);
   const { Kakao } = window;
 

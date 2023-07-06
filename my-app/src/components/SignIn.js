@@ -1,41 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./SignIn.module.css";
 import KakaoLogin from "react-kakao-login";
 import kakao from "../img/kakao.png"
+import { setLoginSuccess, isLoginSuccess } from "./loginState";
 
 function SignIn({ isOpen, setIsOpen }) {
-  /*
-  function loginHandler(e) {
-    const { name, value } = e.target;
-    setState((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  }
-
-  function loginClickHandler() {
-    const { email, password } = state;
-    fetch("http://10.58.2.17:8000/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        password,
-      }),
-    })
-      .then((res) => res.json())
-      .then((res) => console.log(res));
-  }*/
-
   function handleKakaoSuccess(response) {
-    // Handle successful Kakao login
-    console.log("Kakao login successful:", response);
+    setLoginSuccess(true);
+    setIsOpen(false);
   }
 
   function handleKakaoFail(error) {
-    // Handle failed Kakao login
     console.log("Kakao login failed:", error);
   }
 

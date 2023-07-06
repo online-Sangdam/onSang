@@ -10,7 +10,7 @@ import ScrollTop from "./components/ScrollToTop";
 import Home from "./router/Home";
 import Select from "./router/Select";
 import NavBar from "./components/NavBar";
-import Login from "./router/Login";
+import Register from "./router/Register";
 
 //
 
@@ -33,8 +33,8 @@ function App() {
         <Route exact path="/onSang/select"> {/*상담사 메뉴 페이지*/}
           <Select />
         </Route>
-        <Route exact path="/onSang/Login"> {/*로그인 페이지 (삭제예정)*/}
-          <Login />
+        <Route exact path="/onSang/Register"> {/*상담사 회원가입 페이지*/}
+          <Register />
         </Route>
       </Switch>
     </Router>

@@ -7,8 +7,9 @@ const Sidebar = ({ width = 280, children }) => {
   const [xPosition, setX] = useState(width);
   const side = useRef();
   const menus = [
-    { id: "1", name: "Select", path: "/Select" },
-    { id: "2", name: "MENU 2", path: "/" },
+    { id: "1", name: "상담사 목록", path: "/Select" },
+    { id: "2", name: "심리 검사", path: "/PsyTest" },
+    { id: "3", name: "온상 소개", path: "/Intro" },
   ];
 
   // button 클릭 시 토글

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styles from "./SignIn.module.css";
 import KakaoLogin from "react-kakao-login";
 import kakao from "../img/kakao.png"
-import { setLoginSuccess, isLoginSuccess } from "./loginState";
+import { setLoginSuccess } from "./loginState";
 
-function SignIn({ isOpen, setIsOpen }) {
+function SignIn({ isOpen, setIsOpen}) {
   function handleKakaoSuccess(response) {
     setLoginSuccess(true);
     setIsOpen(false);
